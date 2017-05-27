@@ -8,6 +8,10 @@ import { IonicPage, NavController } from 'ionic-angular';
 })
 export class HomePage {
 
+  tab1: any = "LocationPage";
+  tab2: any = "MyLogsPage";
+  tab3: any = "PlaceDetailsPage";
+
   constructor(public navCtrl: NavController) {
 
   }

@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <ion-title>
       Ionic Blank
@@ -11,4 +11,11 @@
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
-</ion-content>
+</ion-content> -->
+
+
+<ion-tabs>
+  <ion-tab [root]="tab1" tabTitle="Location" tabIcon="navigate"></ion-tab>
+  <ion-tab [root]="tab2" tabTitle="My Logs" tabIcon="person"></ion-tab>
+  <ion-tab [root]="tab3" tabTitle="Place Details" tabIcon="bookmarks"></ion-tab>
+</ion-tabs>
