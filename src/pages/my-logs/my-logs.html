@@ -15,30 +15,32 @@
     </ion-card>
 
     <ion-list no-lines>
-      <ion-item>
-        <ion-label stacked>Car Registration</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item>
+      <form [formGroup]="myLogsForm" (change)="saveForm()">
+        <ion-item>
+          <ion-label stacked>Car Registration</ion-label>
+          <ion-input type="text" formControlName="carRegistration"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label stacked>Trailer Registration</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-label stacked>Trailer Registration</ion-label>
+          <ion-input type="text" formControlName="trailerRegistration"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label stacked>Trailer Dimensions</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-label stacked>Trailer Dimensions</ion-label>
+          <ion-input type="text" formControlName="trailerDimensions"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label stacked>Phone Number</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-label stacked>Phone Number</ion-label>
+          <ion-input type="text" formControlName="phoneNumber"></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label stacked>Notes</ion-label>
-        <ion-textarea type="text"></ion-textarea>
-      </ion-item>
+        <ion-item>
+          <ion-label stacked>Notes</ion-label>
+          <ion-textarea type="text" formControlName="notes"></ion-textarea>
+        </ion-item>
+      </form>
     </ion-list>
 
 </ion-content>
