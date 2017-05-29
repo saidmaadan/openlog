@@ -5,10 +5,10 @@
       <img src="assets/images/logo.png" class="logo"/>
     </ion-title>
     <ion-buttons start>
-      <button ion-button icon-only (click)="SelectLocation()"><ion-icon name='pin'></ion-icon></button>
+      <button ion-button icon-only (click)="setLocation()"><ion-icon name='pin'></ion-icon></button>
     </ion-buttons>
     <ion-buttons end>
-      <button ion-button icon-only (click)="takeHome()"><ion-icon name="walk"></ion-icon></button>
+      <button ion-button icon-only (click)="takeMeHome()"><ion-icon name="walk"></ion-icon></button>
     </ion-buttons>
   </ion-navbar>
 
@@ -17,7 +17,7 @@
 
 <ion-content>
   <div #pleaseConnect id="please-connect">
-    <p>Please connect to the Internent...</p>
+    <p>Please connect to the Internet...</p>
   </div>
 
   <div #map id="map"></div>
