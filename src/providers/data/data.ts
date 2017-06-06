@@ -7,6 +7,23 @@ export class DataProvider {
   constructor(public storage: Storage) {
   }
 
+  getData(): Promise<any>{
+    return this.storage.get('quicknotes');
+  }
+
+  save(data): void{
+    let saveData = [];
+    data.forEach((quicknote)=>{
+      saveData.push({
+        title: quicknote.title,
+        items: quicknote.items
+      });
+    });
+
+    let newData = JSON.stringify(saveData);
+    this.storage.set('quicknotes', newData);
+  }
+
   setMyLogs(data: object): void{
     let newData = JSON.stringify(data);
     this.storage.set('mylogs', newData);

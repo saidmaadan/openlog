@@ -11,7 +11,8 @@ export class HomePage {
   tab1: any = "LocationPage";
   tab2: any = "MyLogsPage";
   tab3: any = "PlaceDetailsPage";
-
+  tab4: any = "QuickNotesHomePage";
+  
   constructor(public navCtrl: NavController) {
 
   }
